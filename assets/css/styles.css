@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@300&display=swap');
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(218, 122, 13);
+}
+
+.active {
+    color: rgb(218, 122, 13);
+}
+
+.link {
+    text-decoration: underline;
+}
+
+body {
+    color: rgb(19, 83, 70);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 120%;
+}
+
+h1, h2, h3, nav li {
+    font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 20px;
+}
+
+/*header contents */
+
+#logo {
+    height: 200px;
+    width: 200px;
+}
+
+#name {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+#menu {
+    align-self: center;
+    font-size: 110%;
+    letter-spacing: 2px;
+    float: right;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin: 20px;
+}
+
+/* hero image and cover text */
+#hero-image {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/irish-mountains-hero-image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+
+    /* zooms out hero image on loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+.hero-outer {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* zoom-out level for hero image */
+@keyframes hero-zoom {
+    from{
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* welcome section */
+
+#welcome {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+/* essentials section */
+
+#essentials {
+    margin: 0 auto;
+    max-width: 70%;
+    align-self: center;
+}
+
+/*essential/optional list rules*/
+
+#checklists {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../images/essentials-list-background-image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    margin: 0 auto;
+    height: auto;
+}
+
+.list {
+    background-color: rgba(252, 250, 248, 0.75);
+    border-radius: 5px;
+    height: 90%;
+    width: 700px;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.list h3 {
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+}
+
+
+#optional-list {
+    margin-bottom: 100px;
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* social media links */
+
+#follow-us {
+    padding: .5%;
+}
+
+.social-links > li {
+   display: inline;
+   font-size: 200%;
+   margin: 1%;
+   padding: 5%;
+}
+
+/* locations page rules */
+
+#locations-hero-image {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/locations-hero-image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    /* zooms out hero image on loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+/* locations rules */
+
+#main-locations {
+    padding: 40px;
+}
+
+.trail {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+
+.trail-info {
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.trail-image {
+    height: 600px;
+    width: 1000px;
+    align-self: center;  
+}
+
+/* newsletter page rules */
+
+#newsletter-hero {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/newsletter-hero.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    /* zooms out hero image on loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+/* form styles */
+
+#signup-box {
+    background-image: url(../images/signup-form-background-image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 20px 0 20px 0px;
+    width: 90%;
+    height: 500px;
+    
+}
+
+#signup-form {
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 10px 0 50px 0px;
+    margin: 20px 200px 100px ;
+    border-radius: 50px;
+}
+
+
+
+input[type=text], input[type=email] {
+  max-width: 100%;
+  margin-bottom: 30px;
+
+}
+
+ /* signup successful page styles */
+
+ #success {
+    background-image: url(../images/signup\ -success.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 550px;
+ }
+
+ #success-text {
+    padding-top: 20px;
+ }
+
+ /* media queries */
+
+ /* for screen size 1500px and lower */
+@media screen and (max-width:1500px) {
+    
+/* header contents */
+ 
+ #logo {
+    height: 150px;
+    width: 150px;
+ }
+ #name {
+    font-size: 40px;
+ }
+ #menu {
+    font-size: 100%;
+ }
+
+ /* home page */
+
+ #checklists {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+ }
+
+ .list {
+    align-self: center;
+    background-color: rgba(219, 219, 219, 0.75);
+    border: 2px solid;
+    border-color: rgb(19, 83, 70);
+ }
+
+}
+
+/* for screen size 1080px and lower */
+
+@media screen and (max-width:1080px) {
+     
+/* header contents */
+
+ #name {
+    font-size: 30px;
+ }
+ #menu {
+    font-size: 80%;
+ }
+
+ #menu li {
+    float: none;
+}
+
+/*locations page */
+
+.trail-image {
+    height: 500px;
+    width: auto;
+}
+
+}
+
+@media screen and (max-width:720px) {
+
+    /*header contents */
+
+    #logo {
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #name {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    #menu {
+        width: 80px;
+        font-size: 65%;
+        padding-right: 20px;
+    }
+
+    #menu ul {
+        padding: 0;
+    }
+
+    
+    /* site-wide style changes */
+
+
+    body {
+        font-size: 90%;
+    }
+
+
+
+    /* home page specifics */
+
+
+    .list {
+        width: auto;
+    }
+
+    /* locations page specifics */
+
+    .trail-image {
+        height: auto;
+        width: 320px;
+    }
+
+    /* newsletter page specifics */
+
+    #signup-box {
+        background-image: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #signup-form {
+        margin: auto;
+        background-color: rgba(219, 219, 219, 0.75);
+        border: 2px solid;
+        border-color: rgb(19, 83, 70);
+    }
+}
+    
+
+ 
